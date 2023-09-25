@@ -1,0 +1,27 @@
+<html>
+
+	<head>
+		<title>findgrade</title>
+	</head>
+	
+	<body>
+		<b>Input a Letter:</b><input type="text" id="il"><br><br>
+		<b><p id="result"></p></b>
+	</body>
+	
+		<script type="text/javascript" src="jquery/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+			$("#il").keyup(function(){
+                var il=$("#il").val();
+
+                if ((il=="a")||(il=="e")||(il=="i")||(il=="o")||(il=="u")){
+                    $("#result").html("This is a vowel");
+                } else { 
+                    $("#result").html("This is not a vowel");
+                }
+            });
+			
+		</script>
+	
+</html>
